@@ -1,0 +1,22 @@
+{
+  "name": "amharic-proverbs",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@keywrite/ethiopic-input-methods": "^1.0.0",
+    "@keywrite/web": "^1.0.0",
+    "animate.css": "^4.1.1",
+    "axios": "^0.24.0",
+    "vue": "^3.2.25",
+    "vue-i18n": "^9.2.0-beta.26",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "vite": "^2.7.2"
+  }
+}

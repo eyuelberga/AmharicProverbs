@@ -1,0 +1,24 @@
+name: Deploy Release to Github Pages
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install and Build
+        env:
+          API_URL: ${{secrets.API_URL}}
+          API_KEY: ${{secrets.API_KEY}}
+        run: |
+          VITE_API_URL=$API_URL
+          VITE_API_KEY=$API_KEY
+          yarn
+          yarn build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          branch: gh-pages
+          folder: dist
