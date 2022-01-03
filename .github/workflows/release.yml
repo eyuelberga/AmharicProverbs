@@ -12,10 +12,8 @@ jobs:
           API_URL: ${{secrets.API_URL}}
           API_KEY: ${{secrets.API_KEY}}
         run: |
-          VITE_API_URL=$API_URL
-          VITE_API_KEY=$API_KEY
           yarn
-          yarn build
+          VITE_API_URL=$API_URL && VITE_API_KEY=$API_KEY && yarn build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.7
