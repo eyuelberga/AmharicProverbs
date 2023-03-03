@@ -12,6 +12,10 @@ Amharic Proverbs, a Vue3 web application to access a collection of Amharic prove
 - Share proverbs on Twitter and Facebook
 - Search
 
+## Preview
+![Home](assets/home.png)
+![Search](assets/search.png)
+
 ### Installation
 
 ```bash
