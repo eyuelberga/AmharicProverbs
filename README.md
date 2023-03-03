@@ -4,7 +4,7 @@
   </a>
 </p>
 
-Amharic Proverbs, a Vue3 web application to access a collection of Amharic proverbs from the Amharic Proverbs API.
+Amharic Proverbs, a Vue3 web application to access a collection of Amharic proverbs from the [Amharic Proverbs API](https://github.com/eyuelberga/AmharicProverbsAPI/).
 
 ## Features
 
